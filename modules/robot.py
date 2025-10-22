@@ -68,8 +68,5 @@ def createScene(rootnode):
                                 value=value
                                 )
         MyGui.MyRobotWindow.addSetting(jointName, joint.value, -pi, pi)
-    # This does not work I don't know why
-    # Thus we have to hard code the initial configuration in the first call of URDFModelLoader
-    robot.getMechanicalState().position.value = positions
 
     return
